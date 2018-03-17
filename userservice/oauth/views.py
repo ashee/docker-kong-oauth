@@ -61,7 +61,5 @@ def perform_oauth(request):
     user_id = request.POST.get('user_id')
     response = kong.get_access_code(client_id, user_id)
 
-    print (response.content)
-
     redirect_url = response.json().get('redirect_uri')
     return HttpResponseRedirect(redirect_url)

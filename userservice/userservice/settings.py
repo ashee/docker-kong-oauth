@@ -129,8 +129,8 @@ KONG_URL = os.environ.get('kong_url', 'https://localhost:8443')
 # a code/token from one service can be used against other services
 # using oauth2 plugin
 OAUTH_SERVICE = {
-    "host": "service1.com",
-    "provision_key": "3058d5b2d6c74fcba58f439951206c4b"
+    "host": "localhost",
+    "provision_key": "KbQ3ho0idVrrPqaCliRH2V4kplInyuSI"
 }
 LOGIN_URL = '/admin/login/'
 

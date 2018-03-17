@@ -18,18 +18,18 @@ curl {{kong_url}}/cats/oauth2/authorize
 	-d "response_type=code"
 	-d "scope=email phone address"
 	-d "provision_key=KbQ3ho0idVrrPqaCliRH2V4kplInyuSI"
-	-d "authenticated_userid=7"
+	-d "authenticated_userid=amitava"
 
 ###
 curl {{kong_url}}/cats/oauth2/token
     -d "grant_type=authorization_code"
     -d "client_id=fTvc2apO6PMgdLLYqNFOItUP3ZLHUZJ8"
     -d "client_secret=1XD8rG7LG5QVTaTK99xYlRmGZovTe2Sc"
-    -d "code=58Y1wvCnZx8rHSAZBs3SBMAouRct519G"  
+    -d "code=pN4NYyDGQmYbJdNoKz51vFFZAqB4wLJf"  
 
 ###
 {{kong_url}}/cats/ip
 
 ###
 {{kong_url}}/cats/ip
-Authorization: Bearer O9qV6VxdR0QYQo6KKOYRjHs0q1J43Jn3 
+Authorization: Bearer BOlXFC98QymYrrgjViMgSRKLZRz4o5US
