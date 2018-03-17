@@ -1,0 +1,35 @@
+@kong_admin_url = http://localhost:8001
+@kong_url = https://localhost:8443
+
+###
+{{kong_admin_url}}/consumers/amitava/oauth2
+
+###
+{{kong_admin_url}}/consumers/amitava/oauth2?client_id=fTvc2apO6PMgdLLYqNFOItUP3ZLHUZJ8
+
+###
+{{kong_admin_url}}/apis/cats/plugins
+
+###
+curl {{kong_url}}/cats/oauth2/authorize 
+	-H "Host: localhost"
+	-H "x-forwarded-proto: https"
+	-d "client_id=fTvc2apO6PMgdLLYqNFOItUP3ZLHUZJ8"
+	-d "response_type=code"
+	-d "scope=email phone address"
+	-d "provision_key=KbQ3ho0idVrrPqaCliRH2V4kplInyuSI"
+	-d "authenticated_userid=7"
+
+###
+curl {{kong_url}}/cats/oauth2/token
+    -d "grant_type=authorization_code"
+    -d "client_id=fTvc2apO6PMgdLLYqNFOItUP3ZLHUZJ8"
+    -d "client_secret=1XD8rG7LG5QVTaTK99xYlRmGZovTe2Sc"
+    -d "code=58Y1wvCnZx8rHSAZBs3SBMAouRct519G"  
+
+###
+{{kong_url}}/cats/ip
+
+###
+{{kong_url}}/cats/ip
+Authorization: Bearer O9qV6VxdR0QYQo6KKOYRjHs0q1J43Jn3 

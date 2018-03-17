@@ -1,0 +1,5 @@
+@kong_url = https://localhost:8443
+@kong_admin_url = http://localhost:8001
+
+GET {{kong_admin_url}}/apis/cats/plugins
+
