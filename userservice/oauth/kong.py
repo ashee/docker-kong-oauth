@@ -5,9 +5,12 @@ import requests
 real_get = requests.get
 real_post = requests.post
 
+
 def fake_get(*args, **kwargs):
     print('==========================================>')
-    print('GET {}', args[0])
+    print('GET ', args[0])
+    # kwargs.update({'verify': False})
+    kwargs = {**kwargs, **{'verify': False}}
     data = real_get(*args, **kwargs)
     print(data.content)
     print('<==========================================')
@@ -15,8 +18,9 @@ def fake_get(*args, **kwargs):
 
 def fake_post(*args, **kwargs):
     print('==========================================>')
-    print(' POST {}', args[0])
-    data = real_post(*args, **kwargs)
+    print(' POST ', args[0])
+    kwargs = {**kwargs, **{'verify': False}}
+    data = real_post(*args,  **kwargs)
     print(data.content)
     print('<==========================================')
     return data

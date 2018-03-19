@@ -45,7 +45,7 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -122,7 +122,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-KONG_ADMIN_URL = os.environ.get('kong_admin_url', 'https://localhost:8001')
+KONG_ADMIN_URL = os.environ.get('kong_admin_url', 'https://localhost:8444')
 KONG_URL = os.environ.get('kong_url', 'https://localhost:8443')
 
 # we always authenticate against a specific service
