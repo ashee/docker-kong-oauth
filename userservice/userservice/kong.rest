@@ -33,3 +33,4 @@ curl {{kong_url}}/cats/oauth2/token
 ###
 {{kong_url}}/cats/ip
 Authorization: Bearer BOlXFC98QymYrrgjViMgSRKLZRz4o5US
+

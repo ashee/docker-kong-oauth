@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^application/', views.create_application),
     url('^', include('django.contrib.auth.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^foo', views.get_token)
 ]

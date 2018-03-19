@@ -129,5 +129,6 @@ def get_token(code, client_id, client_secret):
         "client_secret": client_secret,
         "code": code,
     }
-    url = "{}/oauth2/token" . format (settings.KONG_URL)
-    return requests.post(url, data, headers=headers, verify=False)
+    print(data)
+    url = "{}/cats/oauth2/token" . format (settings.KONG_URL)
+    return requests.post(url, json=data, headers=headers, verify=False).json()

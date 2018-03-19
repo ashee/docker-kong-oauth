@@ -3,7 +3,7 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_http_methods
 from django.conf import settings
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, JsonResponse
 from oauth import kong, forms
 
 @login_required
@@ -57,9 +57,21 @@ def create_application(request):
 @require_http_methods(["POST"])
 def perform_oauth(request):
 
+    print('----->', 'perform_oauth')
+
     client_id = request.POST.get('client_id')
     user_id = request.POST.get('user_id')
     response = kong.get_access_code(client_id, user_id)
 
     redirect_url = response.json().get('redirect_uri')
     return HttpResponseRedirect(redirect_url)
+
+
+@require_http_methods(["POST"])
+def get_token(request):
+    print('get_token', request)
+    client_id = request.POST.get('client_id')
+    client_secret = request.POST.get('client_secret')
+    code = request.POST.get('code')
+    token = kong.get_token(code, client_id, client_secret)
+    return JsonResponse(token)
