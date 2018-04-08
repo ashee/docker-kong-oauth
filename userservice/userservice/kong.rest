@@ -1,36 +1,79 @@
-@kong_admin_url = http://localhost:8001
+@kong_admin_url = https://localhost:8444
 @kong_url = https://localhost:8443
 
-###
+### Query for myapi
+{{kong_admin_url}}/apis/httpbin
+
+### Query for plugins on myapi
+{{kong_admin_url}}/apis/httpbin/plugins
+
+### Query for consumer amitava
+{{kong_admin_url}}/consumers/amitava
+
+### Query for consumers oauth2 plugin
 {{kong_admin_url}}/consumers/amitava/oauth2
 
-###
-{{kong_admin_url}}/consumers/amitava/oauth2?client_id=fTvc2apO6PMgdLLYqNFOItUP3ZLHUZJ8
+### Query for consumers oauth2 plugin with a particular client_id
+{{kong_admin_url}}/consumers/amitava/oauth2?client_id=myclient
 
-###
-{{kong_admin_url}}/apis/cats/plugins
-
-###
-curl {{kong_url}}/cats/oauth2/authorize 
+### Invoke authorization flow
+curl {{kong_url}}/myapi/oauth2/authorize 
 	-H "Host: localhost"
 	-H "x-forwarded-proto: https"
-	-d "client_id=fTvc2apO6PMgdLLYqNFOItUP3ZLHUZJ8"
+	-d "client_id=myclient"
 	-d "response_type=code"
 	-d "scope=email phone address"
-	-d "provision_key=KbQ3ho0idVrrPqaCliRH2V4kplInyuSI"
+	-d "provision_key=33ca1ee8-ebfd-4e74-9b49-c55e8ca76694"
 	-d "authenticated_userid=amitava"
 
-###
-curl {{kong_url}}/cats/oauth2/token
+### Use authorization code from above to get bearer token
+curl {{kong_url}}/myapi/oauth2/token
     -d "grant_type=authorization_code"
-    -d "client_id=fTvc2apO6PMgdLLYqNFOItUP3ZLHUZJ8"
-    -d "client_secret=1XD8rG7LG5QVTaTK99xYlRmGZovTe2Sc"
-    -d "code=pN4NYyDGQmYbJdNoKz51vFFZAqB4wLJf"  
+    -d "client_id=myclient"
+    -d "client_secret=ashee007"
+    -d "code=3hcmpxwmCxTGZ237fT7j5R3YecmiUdbj"
 
-###
-{{kong_url}}/cats/ip
+### Use bearer token (obtained above)
+{{kong_url}}/myapi/ip
+Authorization: Bearer kYOu2utB1pZqHUOswPPhHzt6vxynHZJ6
 
-###
-{{kong_url}}/cats/ip
-Authorization: Bearer BOlXFC98QymYrrgjViMgSRKLZRz4o5US
+### No joy without Bearer token
+{{kong_url}}/myapi/ip
+
+######################################################
+# User who has not gone through the authorization flow
+@user = jeremy
+### Query user
+{{kong_admin_url}}/consumers/{{user}}
+
+### Query for consumers oauth2 plugin
+{{kong_admin_url}}/consumers/{{user}}/oauth2
+
+### Query for consumers oauth2 plugin with a particular client_id
+{{kong_admin_url}}/consumers/{{user}}/oauth2?client_id=bellios
+
+### Invoke authorization flow
+curl {{kong_url}}/myapi/oauth2/authorize 
+	-H "Host: localhost"
+	-H "x-forwarded-proto: https"
+	-d "client_id=myclient"
+	-d "response_type=code"
+	-d "scope=email phone address"
+	-d "provision_key=33ca1ee8-ebfd-4e74-9b49-c55e8ca76694"
+	-d "authenticated_userid={{user}}"
+
+### Use authorization code from above to get bearer token
+curl {{kong_url}}/myapi/oauth2/token
+    -d "grant_type=authorization_code"
+    -d "client_id=myclient"
+    -d "client_secret=ashee007"
+    -d "code=t86TD6klehbGnL6wG0F8lZoqCkIx2Pwx"  
+
+### Use bearer token (obtained above)
+{{kong_url}}/myapi/ip
+Authorization: Bearer yVFiAAVM1s3ijOdbeYkt4BNdR5OcmPp0
+
+### No joy without Bearer token
+{{kong_url}}/myapi/ip
+
 
