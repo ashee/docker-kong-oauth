@@ -13224,3 +13224,197 @@
 5146.6  17 | 2018-04-09T01:04:27+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3bba58>
 5146.7  17 | 2018-04-09T01:04:27+0000 [-] (UDP Port 58312 Closed)
 5146.7  17 | 2018-04-09T01:04:27+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3bba58>
+5168.6  24 | c : DNS request from ('192.168.1.12', 62444) to None: 43 bytes
+5168.6  17 | 2018-04-09T01:04:49+0000 [stdout#info] A query: b'macep.feedback.sophos.com'
+5168.6  17 | 2018-04-09T01:04:49+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 28739
+5168.6  17 | 2018-04-09T01:04:49+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3bba20>
+5168.6  17 | 2018-04-09T01:04:49+0000 [-] (UDP Port 28739 Closed)
+5168.6  17 | 2018-04-09T01:04:49+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3bba20>
+5168.7  24 | c : DNS request from ('192.168.1.12', 51381) to None: 38 bytes
+5168.7  17 | 2018-04-09T01:04:49+0000 [stdout#info] A query: b'cacerts.digicert.com'
+5168.7  17 | 2018-04-09T01:04:49+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 36453
+5168.7  17 | 2018-04-09T01:04:49+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3bbac8>
+5168.8  17 | 2018-04-09T01:04:49+0000 [-] (UDP Port 36453 Closed)
+5168.8  17 | 2018-04-09T01:04:49+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3bbac8>
+5169.5  24 | c : DNS request from ('192.168.1.12', 60574) to None: 28 bytes
+5169.5  24 | c : DNS request from ('192.168.1.12', 60832) to None: 28 bytes
+5169.5  24 |  s: SW#-1:10.100.20.190:8444: deleting (11 remain)
+5169.5  24 |  s: SW'unknown':Mux#1509: deleting (10 remain)
+5169.5  24 |  s: SW#-1:10.100.20.190:8444: deleting (9 remain)
+5169.5  24 |  s: SW'unknown':Mux#1510: deleting (8 remain)
+5169.5  24 |  s: SW#-1:10.109.230.70:8443: deleting (7 remain)
+5169.5  24 |  s: SW'unknown':Mux#1513: deleting (6 remain)
+5169.5  24 |  s: SW#-1:10.109.230.70:8443: deleting (5 remain)
+5169.5  24 |  s: SW'unknown':Mux#1514: deleting (4 remain)
+5169.5  24 |  s: SW#-1:10.109.230.70:8443: deleting (3 remain)
+5169.5  24 |  s: SW'unknown':Mux#1515: deleting (2 remain)
+5169.5  24 |  s: SW'unknown':Mux#1507: deleting (1 remain)
+5169.5  24 |  s: SW#15:10.100.20.190:8444: deleting (0 remain)
+5169.5  17 | 2018-04-09T01:04:50+0000 [stdout#info] A query: b'github.com'
+5169.5  17 | 2018-04-09T01:04:50+0000 [stdout#info] RESOLVING b'github.com.svc.cluster.local'
+5169.5  17 | 2018-04-09T01:04:50+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 63260
+5169.5  17 | 2018-04-09T01:04:50+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3bb0b8>
+5169.5  17 | 2018-04-09T01:04:50+0000 [stdout#info] AAAA query, sending back A instead: b'github.com'
+5169.5  17 | 2018-04-09T01:04:50+0000 [stdout#info] A query: b'github.com'
+5169.5  17 | 2018-04-09T01:04:50+0000 [stdout#info] RESOLVING b'github.com.svc.cluster.local'
+5169.5  17 | 2018-04-09T01:04:50+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 8275
+5169.5  17 | 2018-04-09T01:04:50+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0390>
+5169.5  17 | 2018-04-09T01:04:50+0000 [stdout#info] FAILED to lookup b'github.com.svc.cluster.local' ([Failure instance: Traceback (failure with no frames): <class 'twisted.names.error.DNSNameError'>: <Message id=30692 rCode=3 maxSize=0 flags=answer,recDes,recAv queries=[Query('github.com.svc.cluster.local', 1, 1)] authority=[<RR name=cluster.local type=SOA class=IN ttl=60s auth=False>]>
+5169.5  17 | 2018-04-09T01:04:50+0000 [stdout#info] ]), trying b'github.com'
+5169.5  17 | 2018-04-09T01:04:50+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 38726
+5169.5  17 | 2018-04-09T01:04:50+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d06a0>
+5169.5  17 | 2018-04-09T01:04:50+0000 [-] (UDP Port 8275 Closed)
+5169.5  17 | 2018-04-09T01:04:50+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0390>
+5169.5  17 | 2018-04-09T01:04:50+0000 [stdout#info] FAILED to lookup b'github.com.svc.cluster.local' ([Failure instance: Traceback (failure with no frames): <class 'twisted.names.error.DNSNameError'>: <Message id=37575 rCode=3 maxSize=0 flags=answer,recDes,recAv queries=[Query('github.com.svc.cluster.local', 1, 1)] authority=[<RR name=cluster.local type=SOA class=IN ttl=60s auth=False>]>
+5169.5  17 | 2018-04-09T01:04:50+0000 [stdout#info] ]), trying b'github.com'
+5169.5  17 | 2018-04-09T01:04:50+0000 [-] (UDP Port 63260 Closed)
+5169.5  17 | 2018-04-09T01:04:50+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3bb0b8>
+5169.5  17 | 2018-04-09T01:04:50+0000 [-] (UDP Port 38726 Closed)
+5169.5  17 | 2018-04-09T01:04:50+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d06a0>
+5174.1  24 | c : DNS request from ('192.168.1.12', 37940) to None: 28 bytes
+5174.1  17 | 2018-04-09T01:04:55+0000 [stdout#info] A query: b'github.com'
+5174.1  17 | 2018-04-09T01:04:55+0000 [stdout#info] RESOLVING b'github.com.svc.cluster.local'
+5174.1  17 | 2018-04-09T01:04:55+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 48615
+5174.1  17 | 2018-04-09T01:04:55+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3cfc88>
+5174.1  17 | 2018-04-09T01:04:55+0000 [stdout#info] FAILED to lookup b'github.com.svc.cluster.local' ([Failure instance: Traceback (failure with no frames): <class 'twisted.names.error.DNSNameError'>: <Message id=64221 rCode=3 maxSize=0 flags=answer,recDes,recAv queries=[Query('github.com.svc.cluster.local', 1, 1)] authority=[<RR name=cluster.local type=SOA class=IN ttl=60s auth=False>]>
+5174.1  17 | 2018-04-09T01:04:55+0000 [stdout#info] ]), trying b'github.com'
+5174.1  17 | 2018-04-09T01:04:55+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 42707
+5174.1  17 | 2018-04-09T01:04:55+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d00f0>
+5174.1  17 | 2018-04-09T01:04:55+0000 [-] (UDP Port 48615 Closed)
+5174.1  17 | 2018-04-09T01:04:55+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3cfc88>
+5174.2  17 | 2018-04-09T01:04:55+0000 [-] (UDP Port 42707 Closed)
+5174.2  17 | 2018-04-09T01:04:55+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d00f0>
+5175.5  24 | c : DNS request from ('192.168.1.12', 51858) to None: 27 bytes
+5175.5  24 | c : DNS request from ('192.168.1.12', 56616) to None: 27 bytes
+5175.5  17 | 2018-04-09T01:04:56+0000 [stdout#info] AAAA query, sending back A instead: b'localhost'
+5175.5  17 | 2018-04-09T01:04:56+0000 [stdout#info] A query: b'localhost'
+5175.5  17 | 2018-04-09T01:04:56+0000 [stdout#info] RESOLVING b'localhost.default.svc.cluster.local'
+5175.5  17 | 2018-04-09T01:04:56+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 17696
+5175.5  17 | 2018-04-09T01:04:56+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3cfc88>
+5175.5  17 | 2018-04-09T01:04:56+0000 [stdout#info] A query: b'localhost'
+5175.5  17 | 2018-04-09T01:04:56+0000 [stdout#info] RESOLVING b'localhost.default.svc.cluster.local'
+5175.5  17 | 2018-04-09T01:04:56+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 42536
+5175.5  17 | 2018-04-09T01:04:56+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0208>
+5175.5  17 | 2018-04-09T01:04:56+0000 [stdout#info] FAILED to lookup b'localhost.default.svc.cluster.local' ([Failure instance: Traceback (failure with no frames): <class 'twisted.names.error.DNSNameError'>: <Message id=56681 rCode=3 maxSize=0 flags=answer,recDes,recAv queries=[Query('localhost.default.svc.cluster.local', 1, 1)] authority=[<RR name=cluster.local type=SOA class=IN ttl=60s auth=False>]>
+5175.5  17 | 2018-04-09T01:04:56+0000 [stdout#info] ]), trying b'localhost'
+5175.5  17 | 2018-04-09T01:04:56+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 23513
+5175.5  17 | 2018-04-09T01:04:56+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0860>
+5175.5  17 | 2018-04-09T01:04:56+0000 [stdout#info] FAILED to lookup b'localhost.default.svc.cluster.local' ([Failure instance: Traceback (failure with no frames): <class 'twisted.names.error.DNSNameError'>: <Message id=18238 rCode=3 maxSize=0 flags=answer,recDes,recAv queries=[Query('localhost.default.svc.cluster.local', 1, 1)] authority=[<RR name=cluster.local type=SOA class=IN ttl=60s auth=False>]>
+5175.5  17 | 2018-04-09T01:04:56+0000 [stdout#info] ]), trying b'localhost'
+5175.5  17 | 2018-04-09T01:04:56+0000 [-] (UDP Port 17696 Closed)
+5175.5  17 | 2018-04-09T01:04:56+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3cfc88>
+5175.5  17 | 2018-04-09T01:04:56+0000 [-] (UDP Port 42536 Closed)
+5175.5  17 | 2018-04-09T01:04:56+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0208>
+5175.5  17 | 2018-04-09T01:04:56+0000 [-] (UDP Port 23513 Closed)
+5175.5  17 | 2018-04-09T01:04:56+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0860>
+5175.7  24 | c : DNS request from ('192.168.1.12', 60805) to None: 27 bytes
+5175.7  24 | c : DNS request from ('192.168.1.12', 52209) to None: 27 bytes
+5175.7  17 | 2018-04-09T01:04:56+0000 [stdout#info] AAAA query, sending back A instead: b'localhost'
+5175.7  17 | 2018-04-09T01:04:56+0000 [stdout#info] A query: b'localhost'
+5175.7  17 | 2018-04-09T01:04:56+0000 [stdout#info] RESOLVING b'localhost.default.svc.cluster.local'
+5175.7  17 | 2018-04-09T01:04:56+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 15074
+5175.7  17 | 2018-04-09T01:04:56+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3cf400>
+5175.7  17 | 2018-04-09T01:04:56+0000 [stdout#info] A query: b'localhost'
+5175.7  17 | 2018-04-09T01:04:56+0000 [stdout#info] RESOLVING b'localhost.default.svc.cluster.local'
+5175.7  17 | 2018-04-09T01:04:56+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 58084
+5175.7  17 | 2018-04-09T01:04:56+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0780>
+5175.7  17 | 2018-04-09T01:04:56+0000 [stdout#info] FAILED to lookup b'localhost.default.svc.cluster.local' ([Failure instance: Traceback (failure with no frames): <class 'twisted.names.error.DNSNameError'>: <Message id=28729 rCode=3 maxSize=0 flags=answer,recDes,recAv queries=[Query('localhost.default.svc.cluster.local', 1, 1)] authority=[<RR name=cluster.local type=SOA class=IN ttl=60s auth=False>]>
+5175.7  17 | 2018-04-09T01:04:56+0000 [stdout#info] ]), trying b'localhost'
+5175.7  17 | 2018-04-09T01:04:56+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 63966
+5175.7  17 | 2018-04-09T01:04:56+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0a20>
+5175.7  17 | 2018-04-09T01:04:56+0000 [stdout#info] FAILED to lookup b'localhost.default.svc.cluster.local' ([Failure instance: Traceback (failure with no frames): <class 'twisted.names.error.DNSNameError'>: <Message id=45529 rCode=3 maxSize=0 flags=answer,recDes,recAv queries=[Query('localhost.default.svc.cluster.local', 1, 1)] authority=[<RR name=cluster.local type=SOA class=IN ttl=60s auth=False>]>
+5175.7  17 | 2018-04-09T01:04:56+0000 [stdout#info] ]), trying b'localhost'
+5175.7  17 | 2018-04-09T01:04:56+0000 [-] (UDP Port 15074 Closed)
+5175.7  17 | 2018-04-09T01:04:56+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3cf400>
+5175.7  17 | 2018-04-09T01:04:56+0000 [-] (UDP Port 58084 Closed)
+5175.7  17 | 2018-04-09T01:04:56+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0780>
+5175.7  17 | 2018-04-09T01:04:56+0000 [-] (UDP Port 63966 Closed)
+5175.7  17 | 2018-04-09T01:04:56+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0a20>
+5176.5  24 | c : DNS request from ('192.168.1.12', 59362) to None: 27 bytes
+5176.5  24 | c : DNS request from ('192.168.1.12', 64796) to None: 27 bytes
+5176.5  17 | 2018-04-09T01:04:57+0000 [stdout#info] AAAA query, sending back A instead: b'localhost'
+5176.5  17 | 2018-04-09T01:04:57+0000 [stdout#info] A query: b'localhost'
+5176.6  17 | 2018-04-09T01:04:57+0000 [stdout#info] RESOLVING b'localhost.default.svc.cluster.local'
+5176.6  17 | 2018-04-09T01:04:57+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 3582
+5176.6  17 | 2018-04-09T01:04:57+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0a58>
+5176.6  17 | 2018-04-09T01:04:57+0000 [stdout#info] A query: b'localhost'
+5176.6  17 | 2018-04-09T01:04:57+0000 [stdout#info] RESOLVING b'localhost.default.svc.cluster.local'
+5176.6  17 | 2018-04-09T01:04:57+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 2374
+5176.6  17 | 2018-04-09T01:04:57+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d01d0>
+5176.6  17 | 2018-04-09T01:04:57+0000 [stdout#info] FAILED to lookup b'localhost.default.svc.cluster.local' ([Failure instance: Traceback (failure with no frames): <class 'twisted.names.error.DNSNameError'>: <Message id=57446 rCode=3 maxSize=0 flags=answer,recDes,recAv queries=[Query('localhost.default.svc.cluster.local', 1, 1)] authority=[<RR name=cluster.local type=SOA class=IN ttl=60s auth=False>]>
+5176.6  17 | 2018-04-09T01:04:57+0000 [stdout#info] ]), trying b'localhost'
+5176.6  17 | 2018-04-09T01:04:57+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 62309
+5176.6  17 | 2018-04-09T01:04:57+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0be0>
+5176.6  17 | 2018-04-09T01:04:57+0000 [stdout#info] FAILED to lookup b'localhost.default.svc.cluster.local' ([Failure instance: Traceback (failure with no frames): <class 'twisted.names.error.DNSNameError'>: <Message id=47256 rCode=3 maxSize=0 flags=answer,recDes,recAv queries=[Query('localhost.default.svc.cluster.local', 1, 1)] authority=[<RR name=cluster.local type=SOA class=IN ttl=60s auth=False>]>
+5176.6  17 | 2018-04-09T01:04:57+0000 [stdout#info] ]), trying b'localhost'
+5176.6  17 | 2018-04-09T01:04:57+0000 [-] (UDP Port 3582 Closed)
+5176.6  17 | 2018-04-09T01:04:57+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0a58>
+5176.6  17 | 2018-04-09T01:04:57+0000 [-] (UDP Port 2374 Closed)
+5176.6  17 | 2018-04-09T01:04:57+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d01d0>
+5176.6  17 | 2018-04-09T01:04:57+0000 [-] (UDP Port 62309 Closed)
+5176.6  17 | 2018-04-09T01:04:57+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0be0>
+5177.4  24 | c : DNS request from ('192.168.1.12', 60136) to None: 27 bytes
+5177.4  24 | c : DNS request from ('192.168.1.12', 51030) to None: 27 bytes
+5177.4  17 | 2018-04-09T01:04:58+0000 [stdout#info] AAAA query, sending back A instead: b'localhost'
+5177.4  17 | 2018-04-09T01:04:58+0000 [stdout#info] A query: b'localhost'
+5177.4  17 | 2018-04-09T01:04:58+0000 [stdout#info] RESOLVING b'localhost.default.svc.cluster.local'
+5177.4  17 | 2018-04-09T01:04:58+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 51991
+5177.4  17 | 2018-04-09T01:04:58+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0ba8>
+5177.4  17 | 2018-04-09T01:04:58+0000 [stdout#info] A query: b'localhost'
+5177.4  17 | 2018-04-09T01:04:58+0000 [stdout#info] RESOLVING b'localhost.default.svc.cluster.local'
+5177.4  17 | 2018-04-09T01:04:58+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 41322
+5177.4  17 | 2018-04-09T01:04:58+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0b38>
+5177.4  17 | 2018-04-09T01:04:58+0000 [stdout#info] FAILED to lookup b'localhost.default.svc.cluster.local' ([Failure instance: Traceback (failure with no frames): <class 'twisted.names.error.DNSNameError'>: <Message id=179 rCode=3 maxSize=0 flags=answer,recDes,recAv queries=[Query('localhost.default.svc.cluster.local', 1, 1)] authority=[<RR name=cluster.local type=SOA class=IN ttl=60s auth=False>]>
+5177.4  17 | 2018-04-09T01:04:58+0000 [stdout#info] ]), trying b'localhost'
+5177.4  17 | 2018-04-09T01:04:58+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 23123
+5177.4  17 | 2018-04-09T01:04:58+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0c18>
+5177.4  17 | 2018-04-09T01:04:58+0000 [-] (UDP Port 51991 Closed)
+5177.4  17 | 2018-04-09T01:04:58+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0ba8>
+5177.4  17 | 2018-04-09T01:04:58+0000 [stdout#info] FAILED to lookup b'localhost.default.svc.cluster.local' ([Failure instance: Traceback (failure with no frames): <class 'twisted.names.error.DNSNameError'>: <Message id=25684 rCode=3 maxSize=0 flags=answer,recDes,recAv queries=[Query('localhost.default.svc.cluster.local', 1, 1)] authority=[<RR name=cluster.local type=SOA class=IN ttl=60s auth=False>]>
+5177.4  17 | 2018-04-09T01:04:58+0000 [stdout#info] ]), trying b'localhost'
+5177.4  17 | 2018-04-09T01:04:58+0000 [-] (UDP Port 41322 Closed)
+5177.4  17 | 2018-04-09T01:04:58+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0b38>
+5177.4  17 | 2018-04-09T01:04:58+0000 [-] (UDP Port 23123 Closed)
+5177.4  17 | 2018-04-09T01:04:58+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0c18>
+5179.3  24 | c : DNS request from ('192.168.1.12', 55777) to None: 37 bytes
+5179.3  17 | 2018-04-09T01:05:00+0000 [stdout#info] A query: b'kong-hf.mashape.com'
+5179.3  17 | 2018-04-09T01:05:00+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 1981
+5179.3  17 | 2018-04-09T01:05:00+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0438>
+5179.3  17 | 2018-04-09T01:05:00+0000 [-] (UDP Port 1981 Closed)
+5179.3  17 | 2018-04-09T01:05:00+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0438>
+5192.5  24 | c : DNS request from ('192.168.1.12', 47819) to None: 47 bytes
+5192.5  17 | 2018-04-09T01:05:13+0000 [stdout#info] A query: b'clientservices.googleapis.com'
+5192.5  17 | 2018-04-09T01:05:13+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 60061
+5192.5  17 | 2018-04-09T01:05:13+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0d68>
+5192.6  17 | 2018-04-09T01:05:13+0000 [-] (UDP Port 60061 Closed)
+5192.6  17 | 2018-04-09T01:05:13+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0d68>
+5195.2  24 | c : DNS request from ('192.168.1.12', 4227) to None: 33 bytes
+5195.2  24 | c : DNS request from ('192.168.1.12', 60685) to None: 34 bytes
+5195.2  24 | c : DNS request from ('192.168.1.12', 29873) to None: 33 bytes
+5195.3  17 | 2018-04-09T01:05:16+0000 [stdout#info] A query: b'docs.google.com'
+5195.3  17 | 2018-04-09T01:05:16+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 32752
+5195.3  17 | 2018-04-09T01:05:16+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d00f0>
+5195.3  17 | 2018-04-09T01:05:16+0000 [stdout#info] A query: b'drive.google.com'
+5195.3  17 | 2018-04-09T01:05:16+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 19706
+5195.3  17 | 2018-04-09T01:05:16+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0c18>
+5195.3  17 | 2018-04-09T01:05:16+0000 [stdout#info] A query: b'ssl.gstatic.com'
+5195.3  17 | 2018-04-09T01:05:16+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 37389
+5195.3  17 | 2018-04-09T01:05:16+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0be0>
+5195.3  17 | 2018-04-09T01:05:16+0000 [-] (UDP Port 32752 Closed)
+5195.3  17 | 2018-04-09T01:05:16+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d00f0>
+5195.3  17 | 2018-04-09T01:05:16+0000 [-] (UDP Port 19706 Closed)
+5195.3  17 | 2018-04-09T01:05:16+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0c18>
+5195.3  17 | 2018-04-09T01:05:16+0000 [-] (UDP Port 37389 Closed)
+5195.3  17 | 2018-04-09T01:05:16+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0be0>
+5197.2  24 | c : DNS request from ('192.168.1.12', 58712) to None: 32 bytes
+5197.2  17 | 2018-04-09T01:05:18+0000 [stdout#info] A query: b'api.segment.io'
+5197.3  17 | 2018-04-09T01:05:18+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 17106
+5197.3  17 | 2018-04-09T01:05:18+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0c88>
+5197.3  17 | 2018-04-09T01:05:18+0000 [-] (UDP Port 17106 Closed)
+5197.3  17 | 2018-04-09T01:05:18+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0c88>
+5199.0  24 | c : DNS request from ('192.168.1.12', 59277) to None: 42 bytes
+5199.1  17 | 2018-04-09T01:05:20+0000 [stdout#info] A query: b'analytics.screenhero.com'
+5199.1  17 | 2018-04-09T01:05:20+0000 [DNSDatagramProtocol (UDP)] DNSDatagramProtocol starting on 52318
+5199.1  17 | 2018-04-09T01:05:20+0000 [DNSDatagramProtocol (UDP)] Starting protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0198>
+5199.1  17 | 2018-04-09T01:05:20+0000 [-] (UDP Port 52318 Closed)
+5199.1  17 | 2018-04-09T01:05:20+0000 [-] Stopping protocol <twisted.names.dns.DNSDatagramProtocol object at 0x7f2e1d3d0198>
