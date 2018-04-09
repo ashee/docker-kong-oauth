@@ -31,13 +31,13 @@
           {% if client_id %}
           <div class="mdl-card__actions mdl-card--border">
             <a 
-              href="http://docker.local:8002/oauth/?client_id={{client_id}}"
+              href="http://localhost:9000/oauth?client_id={{client_id}}"
               class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" >Authenticate</a>
           </div>
           {% else %}
           <div class="mdl-card__actions mdl-card--border">
             <a  
-              href="http://docker.local:8002/application"
+              href="http://localhost:9000/application"
               class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" >
                 Create a client application?</a>
           {% endif %}

@@ -14,10 +14,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url, include
+from django.http import HttpResponseRedirect
 from django.contrib import admin
 from oauth import views
 
 urlpatterns = [
+    url(r'^$', lambda r: HttpResponseRedirect('admin/')),
     url(r'^oauth/', views.oauth_allow_access, name="oauth"),
     url(r'^authorize/', views.perform_oauth),
     url(r'^application/', views.create_application),
