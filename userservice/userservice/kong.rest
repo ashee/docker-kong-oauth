@@ -91,3 +91,6 @@ curl -X PATCH {{kong_admin_url}}/consumers/amitava/oauth2/myclient \
     --data "client_id=myclient" \
     --data "client_secret=ashee007" \
     --data "redirect_uri=http://localhost:5000/"
+
+### 
+{{kong_url}}/myapi?access_token=
