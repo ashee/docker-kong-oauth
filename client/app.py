@@ -18,7 +18,7 @@ def get_token(code, client_id, client_secret):
         "client_secret": client_secret,
         "code": code,
     }
-    url = "{}/oauth2/token" . format (kong_url)
+    url = "{}/myapi/oauth2/token" . format (kong_url)
     return requests.post(url, data, headers=headers, verify=False)
 
 
@@ -33,10 +33,11 @@ def hello():
         # get token
 
         token = get_token(code, client_id, client_secret).json()
-        print (token)
-        url1 = "{}/myapi?access_token={}" . format (kong_url, token.get('access_token'))
+        print ('------>', token)
+        url1 = "{}/myapi/ip?access_token={}" . format (kong_url, token.get('access_token'))
         # url2 = "{}/service2?access_token={}" . format (kong_url, token.get('access_token'))
         service1_response = requests.get(url1, verify=False)
+        print(service1_response)
         # service2_response = requests.get(url2, verify=False)
         # call service 1
         # call service 2

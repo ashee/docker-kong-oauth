@@ -4,8 +4,8 @@
 ### Query for myapi
 {{kong_admin_url}}/apis/httpbin
 
-### Query for services
-{{kong_admin_url}}/
+### Query for oauth2 plugin
+{{kong_admin_url}}/plugins/
 
 ### Query for plugins on myapi
 {{kong_admin_url}}/apis/httpbin/plugins
@@ -85,4 +85,9 @@ Authorization: Bearer yVFiAAVM1s3ijOdbeYkt4BNdR5OcmPp0
 ### oauth flow using userservice
 
 
-
+### update redirect
+curl -X PATCH {{kong_admin_url}}/consumers/amitava/oauth2/myclient \
+    --data "name=Test%20Application" \
+    --data "client_id=myclient" \
+    --data "client_secret=ashee007" \
+    --data "redirect_uri=http://localhost:5000/"
